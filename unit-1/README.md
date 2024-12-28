@@ -8,7 +8,7 @@
   terraform {
     required_providers {
       azurerm = {
-        source = "hashicorp/azurerm"
+        source  = "hashicorp/azurerm"
         version = "~> 4.0"
       }
     }
@@ -17,8 +17,8 @@
 
   - Run `terraform init`
   - Inspect the resulting `.terraform` directory.
-    Notice that the latest version matching our `version` constraint has been downloaded locally.
-    Terraform dowloads all providers and modules (you'll learn about modules later) into this directory as a local cache.
+    Notice that the provider matching our `version` constraint has been downloaded locally.
+    Terraform downloads all providers and modules (you'll learn about modules later) into this directory as a local cache.
   - Inspect the resulting `.terraform.lock.hcl` file.
     Notice that the version of the downloaded provider has been recorded here.
 
