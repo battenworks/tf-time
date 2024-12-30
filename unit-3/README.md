@@ -39,7 +39,7 @@ Let's look at some others.
       You should see `No changes. Your infrastructure matches the configuration.`
     - Notes
         - You no longer need to use the `-var-file` flag to reference your variables file.
-        - Since it still ends in `.tfvars`, the same `.gitignore` rules apply.
+        - Since your variables file still ends in `.tfvars`, the same `.gitignore` rules apply.
 
 - What did we learn?
   - There are multiple ways of supplying variable values to the CLI.
