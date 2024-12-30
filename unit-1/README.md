@@ -4,7 +4,7 @@
   - Start with an empty directory.
   - Create a file called `main.tf` with the following `terraform` block, to set our provider requirement.
 
-  ```
+  ```terraform
   terraform {
     required_providers {
       azurerm = {
