@@ -10,8 +10,10 @@ Let's look at some others.
 
 1. Use the `-var` flag
     - There are 2 ways to do this.
-    - `terraform plan -var subscription_id=<your subscription id>`
-    - `terraform plan -var=subscription_id=<your subscription id>`
+    - Run `terraform plan -var subscription_id=<your subscription id>`.
+      You should see a plan that reports `No changes. Your infrastructure matches the configuration.`
+    - Run `terraform plan -var=subscription_id=<your subscription id>`.
+      You should see `No changes. Your infrastructure matches the configuration.`
     - Notice the equals sign immediately following the `-var` flag in the second example.
       Both commands are equivalent.
       This rule is universal to all flags you supply to the CLI.
@@ -23,7 +25,8 @@ Let's look at some others.
     subscription_id = "<your subscription id>"
     ```
 
-    - Run `terraform plan -var-file local.tfvars`
+    - Run `terraform plan -var-file local.tfvars`.
+      You should see `No changes. Your infrastructure matches the configuration.`
     - Notes
         - `.tfvars` files declare variables in the format `<key> = <value>` and can have an unlimited number of variables.
         - You can encapsulate multiple variables in one file.
@@ -32,7 +35,8 @@ Let's look at some others.
 
 3. Use an automatic variables file
     - Rename your variables file to `local.auto.tfvars`.
-    - Run `terraform plan`
+    - Run `terraform plan`.
+      You should see `No changes. Your infrastructure matches the configuration.`
     - Notes
         - You no longer need to use the `-var-file` flag to reference your variables file.
         - Since it still ends in `.tfvars`, the same `.gitignore` rules apply.
