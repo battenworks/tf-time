@@ -3,7 +3,7 @@
 - Creating a resource group incurs no Azure costs, so let's start with one of those.
   - In your `main.tf` file, add the following `resource` block to define a new Azure resource group.
 
-  ```
+  ```terraform
   resource "azurerm_resource_group" "tf_time" {
     name     = "rg-tf-time"
     location = "eastus2"
@@ -19,7 +19,7 @@
     We have only required that Terraform download the provider (the `required_providers` snippet from Unit 1).
   - In your `main.tf` file, add the following blocks to configure the correct Azure subscription to work with.
 
-  ```
+  ```terraform
   variable "subscription_id" {
     description = "The ID of your Azure subscription"
     nullable    = false

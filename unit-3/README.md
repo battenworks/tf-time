@@ -21,7 +21,7 @@ Let's look at some others.
 2. Use a variables file
     - Create a new file called `local.tfvars` and set your `subscription_id` as follows.
 
-    ```
+    ```terraform
     subscription_id = "<your subscription id>"
     ```
 
