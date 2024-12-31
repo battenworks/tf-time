@@ -21,4 +21,4 @@ So far, we've participated in the red and green behaviors of TDD.
 - What did we learn?
   - We learned that simple refactoring, like moving blocks to different files for better organization, results in non-breaking behavior.
     Terraform doesn't care which files contain the configuration blocks.
-    Terraform builds its dependency graph based on all files that end in `.tf` in the current working directory, regardles of filename.
+    Terraform builds its dependency graph based on all files that end in `.tf` in the current working directory, regardless of filename.
