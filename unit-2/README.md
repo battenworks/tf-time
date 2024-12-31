@@ -1,6 +1,7 @@
 # Unit 2 - I Want a Resource Group
 
 - Creating a resource group incurs no Azure costs, so let's start with one of those.
+  Everything in Azure needs to be put into a resource group anyway.
   - In your `main.tf` file, add the following `resource` block to define a new Azure resource group.
 
   ```terraform
