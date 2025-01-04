@@ -38,7 +38,7 @@ Let's look at some others.
     - Run `terraform plan`.
       You should see `No changes. Your infrastructure matches the configuration.`
     - Notes
-        - You no longer need to use the `-var-file` flag to reference your variables file.
+        - You no longer need to use the `-var-file` flag to reference your variables file because Terraform automatically references variables files that end in `.auto.tfvars`.
         - Since your variables file still ends in `.tfvars`, the same `.gitignore` rules apply.
 
 - What did we learn?
