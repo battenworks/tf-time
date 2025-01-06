@@ -5,11 +5,11 @@ You _could_ simply add the subscription ID string in the `provider` block, but t
 So, what to do?
 
 There are a few ways to supply variable values to the Terraform CLI.
-You've experienced one of them already.
+You experienced one of them already when you were prompted to supply it at runtime.
 Let's look at some others.
 
-1. Use the `-var` flag
-    - There are 2 ways to do this.
+1. Use the `-var` flag.
+   There are 2 ways to do this.
     - Run `terraform plan -var subscription_id=<your subscription id>`.
       You should see a plan that reports `No changes. Your infrastructure matches the configuration.`
     - Run `terraform plan -var=subscription_id=<your subscription id>`.
@@ -18,7 +18,7 @@ Let's look at some others.
       Both commands are equivalent.
       This rule is universal to all flags you supply to the CLI.
 
-2. Use a variables file
+2. Use a variables file.
     - Create a new file called `local.tfvars` and set your `subscription_id` as follows.
 
     ```terraform
@@ -33,7 +33,7 @@ Let's look at some others.
         - The `.tfvars` file extension is commonly included in `.gitignore` files, so you can keep sensitive values out of source control.
         - You can find an example `.gitignore` file in the root of this repo.
 
-3. Use an automatic variables file
+3. Use an automatic variables file.
     - Rename your variables file to `local.auto.tfvars`.
     - Run `terraform plan`.
       You should see `No changes. Your infrastructure matches the configuration.`
